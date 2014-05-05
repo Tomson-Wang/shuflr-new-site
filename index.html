@@ -2,11 +2,14 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-    <meta content="device-width:320px"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
     <title></title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/jquery.js"></script>
     <script src="js/scrollTo.js"></script>
+    <script src="js/control.js"></script>
+
 </head>
 <body>
     <div class="containers">
@@ -31,16 +34,16 @@
                 </div>
                 <nav class=" menu-container ">
                     <ul class="content-table ">
-                        <li class="cell  center"><span class="nav ">Fun Facts</span></li>
-                        <li class="cell  center"><span class="nav">Play with Us</span></li>
-                        <li class="cell  center"><span class="nav">About Us</span></li>
-                        <li class="cell  center"><span class="nav">Work with Us</span></li>
+                        <li class="cell  center"><a href="#fun_game_facts" data-path="fgf-container"><span class="nav ">Fun Facts</span></a></li>
+                        <li class="cell  center"><a href="#play_with_us" data-path="pwu-container"><span class="nav">Play with Us</span></a></li>
+                        <li class="cell  center"><a href="about.html"><span class="nav">About Us</span></a></li>
+                        <li class="cell  center"><a href="#work_with_us" data-path="wwu-container"><span class="nav">Work with Us</span></a></li>
                     </ul>
                 </nav>
 
             </section>
             <section class="npw-container">
-                <article class="section-title"><h1 class="wpn-title"><span>Who’s Playing Now?</span></h1></article>
+                <article class="section-title large-title"><h1 class="wpn-title"><span>Who’s Playing Now?</span></h1></article>
 
                 <div class="player-list">
                     <ul class="content-table">
@@ -58,7 +61,7 @@
                 <!--div.player-list>ul.content-table>li.item.play-item*33>div.play-container>figure>img.play-head[src=images/]-->
             </section>
             <section class="fgf-container">
-                <article class="section-title"><h1 class="fgf-title"><span>Fun Game Facts</span></h1></article>
+                <article class="section-title large-title"><h1 class="fgf-title"><span>Fun Game Facts</span></h1></article>
                 <ul class=" content-table fact-list">
                     <li class="cell center fact-item"><div class="white-shadow-font"><p class=" fact-score-l">1.000.000.000</p><p class="fact-title">Hands of Poker Won</p></div></li>
                     <li class="cell center fact-item"><div class="white-shadow-font"><p class=" fact-score-l">1.000.000.000</p><p class="fact-title">Hands of Poker Won</p></div></li>
@@ -73,20 +76,20 @@
                 <img src="images/mid-image.jpg" alt=""/>
             </div>
             <section class="pwu-container">
-                <article class="section-title"><h1 class="pwu-title"><span>Play With Us</span></h1></article>
+                <article class="section-title large-title"><h1 class="pwu-title"><span>Play With Us</span></h1></article>
                 <figure class=" content-table banner-list">
-                    <div class="cell center"><img src="images/comesoon.jpg" alt=""/></div>
-                    <div class="cell center"><img src="images/comesoon.jpg" alt=""/></div>
-                    <div class="cell center"><img src="images/comesoon.jpg" alt=""/></div>
+                    <div class="cell "><img src="images/comesoon.jpg" alt=""/></div>
+                    <div class="cell "><img src="images/comesoon.jpg" alt=""/></div>
+                    <div class="cell "><img src="images/comesoon.jpg" alt=""/></div>
                 </figure>
                 <figure class=" content-table banner-list">
-                    <div class="cell center"><img src="images/comesoon.jpg" alt=""/></div>
-                    <div class="cell center"><img src="images/comesoon.jpg" alt=""/></div>
-                    <div class="cell center"><img src="images/comesoon.jpg" alt=""/></div>
+                    <div class="cell "><img src="images/comesoon.jpg" alt=""/></div>
+                    <div class="cell "><img src="images/comesoon.jpg" alt=""/></div>
+                    <div class="cell "><img src="images/comesoon.jpg" alt=""/></div>
                 </figure>
             </section>
             <section class="wwu-container">
-                <article class="section-title"><h1 class="wwu-title"><span>Work With Us</span></h1></article>
+                <article class="section-title large-title"><h1 class="wwu-title"><span>Work With Us</span></h1></article>
                 <article class="introduction">
                     <p class="center">Game Developers got a game concept or would like to cross collaborate?</p>
                     <p class="center">Are you Brand? In-Game advertsing and more is possible.</p>
@@ -115,6 +118,109 @@
                 </div>
                 <footer class="footer-container"></footer>
             </section>
+            <div class="popup-container">
+                <div class="popup-box">
+                    <div class="popup-close"></div>
+                    <div class="scroll-box">
+                        <ul class="scroll-items ">
+
+
+                        <li class="scroll-item ">
+
+                            <div class="game-name section-title large-title"><h1 class="shuflr-casino-title"><span>Shuflr Casino</span></h1></div>
+                            <div class="game-content content-table">
+
+
+                                <figure class="game-pic cell-3">
+                                    <image src="images/comesoon.jpg" ></image>
+                                </figure>
+                                <div class="game-information cell-5">
+                                    <article class="game-introduction">
+                                        <p>Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. We would love to arrange a call, coffee or lunch to find out more.Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. </p>
+                                    </article>
+                                    <ul class="game-launchers">
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poa-title"><span>Play on Android</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poap-title"><span>Play on Apple</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="piyb-title"><span>Play in your Browser</span></h1></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scroll-item ">
+
+                            <div class="game-name section-title large-title"><h1 class="shuflr-casino-title"><span>Shuflr Casino</span></h1></div>
+                            <div class="game-content content-table">
+
+
+                                <figure class="game-pic cell-3">
+                                    <image src="images/comesoon.jpg" ></image>
+                                </figure>
+                                <div class="game-information cell-5">
+                                    <article class="game-introduction">
+                                        <p>Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. We would love to arrange a call, coffee or lunch to find out more.Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. </p>
+                                    </article>
+                                    <ul class="game-launchers">
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poa-title"><span>Play on Android</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poap-title"><span>Play on Apple</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="piyb-title"><span>Play in your Browser</span></h1></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scroll-item ">
+
+                            <div class="game-name section-title large-title"><h1 class="shuflr-casino-title"><span>Shuflr Casino</span></h1></div>
+                            <div class="game-content content-table">
+
+
+                                <figure class="game-pic cell-3">
+                                    <image src="images/comesoon.jpg" ></image>
+                                </figure>
+                                <div class="game-information cell-5">
+                                    <article class="game-introduction">
+                                        <p>Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. We would love to arrange a call, coffee or lunch to find out more.Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. </p>
+                                    </article>
+                                    <ul class="game-launchers">
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poa-title"><span>Play on Android</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poap-title"><span>Play on Apple</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="piyb-title"><span>Play in your Browser</span></h1></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scroll-item ">
+
+                            <div class="game-name section-title large-title"><h1 class="shuflr-casino-title"><span>Shuflr Casino</span></h1></div>
+                            <div class="game-content content-table">
+
+
+                                <figure class="game-pic cell-3">
+                                    <image src="images/comesoon.jpg" ></image>
+                                </figure>
+                                <div class="game-information cell-5">
+                                    <article class="game-introduction">
+                                        <p>Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. We would love to arrange a call, coffee or lunch to find out more.Game Developers got a game concept or would like to cross collaborate? Are you Brand? In-Game advertsing and more is possible. </p>
+                                    </article>
+                                    <ul class="game-launchers">
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poa-title"><span>Play on Android</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="poap-title"><span>Play on Apple</span></h1></a></li>
+                                        <li class="launcher-item"><a href="#" class="section-title mid-title"><h1 class="piyb-title"><span>Play in your Browser</span></h1></a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul></div>
+
+                    <div class="prev-button"><a href="#"></a></div>
+                    <div class="next-button"><a href="#"></a></div>
+                </div>
+
+            </div>
+
 
         </section>
     </div>
