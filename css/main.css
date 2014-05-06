@@ -1,6 +1,6 @@
 /*@charset "utf-8";*/
 
-html,div,p,ul,li,input,textarea,section,article,figure,image,span,h1{
+html,body,div,p,ul,li,input,textarea,section,article,figure,image,span,h1{
     margin: 0;padding: 0;
     border:0;
     font-family: "Helvetica Neue";

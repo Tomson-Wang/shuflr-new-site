@@ -1,6 +1,7 @@
 /**
  * Created by tomson on 14-3-24.
  */
+//if(navigator.userAgent.match(/iPhone/i))
 jQuery(function($){
 	var scroll_game_index=1;
 	var scroll_game_count=$('.popup-box .scroll-item').length;
