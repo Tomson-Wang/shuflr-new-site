@@ -1,6 +1,6 @@
 /*@charset "utf-8";*/
 
-html,body,div,p,ul,li,input,textarea,section,article,figure,image,span,h1{
+body,div,p,ul,li,input,textarea,section,article,figure,image,span,h1{
     margin: 0;padding: 0;
     border:0;
     font-family: "Helvetica Neue";
@@ -11,6 +11,10 @@ html,body,div,p,ul,li,input,textarea,section,article,figure,image,span,h1{
 /*a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video,xmp{border:0;margin:0;padding:0}*/
 img{ display:inline-block;}
 a{ text-decoration:none; color:#000000}
+input[type=button]{
+    -webkit-appearance:none;
+    outline:none
+}
 ul li{ list-style-type:none;}
 .clear{ clear:both; font-size:0; line-height:0; visibility:hidden; height:0;}
 .clearfix:after {clear: both; content: " ";    display: block; height: 0; overflow:hidden;}
@@ -32,6 +36,12 @@ figure{
     -webkit-margin-after: 0;
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
+}
+.mobile-hide{
+    display:block;
+}
+.hi-res-hide{
+    display: none;
 }
 .containers .about-content-container{
     background-size: 100% auto;
@@ -236,9 +246,9 @@ figure{
 
 }
 .player-list .player-item{
-    width:60px;
-    height:80px;
-    margin: 5px 8px;
+    width:70px;
+    height:95px;
+    /* margin: 5px 8px; */
     display: block;
     float: left;
 }
@@ -459,7 +469,6 @@ ul.cities .city-item{
 }
 .content-container .popup-container .popup-box{
     width: 100%;
-    max-height: 320px;
     position: relative;
     display: block;
 }
@@ -470,7 +479,7 @@ ul.cities .city-item{
     height:40px;
     background: url("../images/close-btn.png") no-repeat;
     background-size:100% 100%;
-    top: -40px;
+    top: -50px;
     right: 20px;
     z-index:102;
 
@@ -479,9 +488,9 @@ ul.cities .city-item{
     position: relative;
     display: block;
     overflow: hidden;
-    /*overflow-y: scroll;*/
+    /* overflow-y: scroll; */
     width:80%;
-    margin: 50px 10%;
+    margin: 60px 10%;
 }
 
 .popup-box .scroll-items{
@@ -489,9 +498,16 @@ ul.cities .city-item{
 
 }
 .popup-box .scroll-item{
-    width:25%;
-
+    width:100%;
+    position: absolute;
+    overflow: hidden;
     float:left;
+}
+.wrapper-box
+{
+    position: absolute;
+    width: 100%;
+    height:600px;
 }
 .popup-box .game-pic{
     /*-webkit-box-flex: 1.0;*/
@@ -509,9 +525,7 @@ ul.cities .city-item{
 
 }
 .popup-box .game-name{
-    position: relative;
-    left: 27%;
-    margin-bottom: -50px;
+    text-align: left;
 }
 .popup-box .game-introduction{
     display: block;
@@ -522,6 +536,7 @@ ul.cities .city-item{
     color:#ffffff;
     font-size: 12px;
     margin: 80px 5% 20px 5%;
+    text-align: center;
 }
 .popup-box .game-introduction p{
     display: block;
@@ -554,12 +569,8 @@ ul.cities .city-item{
 {
 
     position: absolute;
-
-
     top: 50%;
-
     right: 2%;
-
     z-index: 105;
     display: block;
     width: 40px;
@@ -617,6 +628,7 @@ ul.cities .city-item{
         box-flex: 5.0;
         width: 100%;
         height: 100%;
+        /* margin-top: 60px; */
     }
     .menu-container{
         height:80px;
@@ -656,8 +668,28 @@ ul.cities .city-item{
         width: 90%;
         margin: 0px 5% 40px 5%;
     }
+    .popup-box .game-pic img{
+        /* margin-top: -50px; */
+    }
+    .popup-box .game-name{
+        /* position: relative; */
+        /* left: 32%; */
+        /* margin: 0 0 -50px 0; */
+        /*-webkit-transform: scale(.8);*/
+        /*-moz-transform: scale(.8);*/
+        /*-ms-transform: scale(.8);*/
+        /*-o-transform: scale(.8);*/
+        /*transform: scale(.8);*/
+
+        margin: 0 5% 20px 5%;
+    }
+    .popup-box .game-introduction{
+        margin-top: -10px;
+    }
 
 
+
+    .popup-box .game-content{}
     /*low-res style start*/
     @media only screen and (max-width: 1440px)
     {
@@ -683,14 +715,12 @@ ul.cities .city-item{
             height: 560px;
         }
         .content-container .about-header-container{
-            /* height: 640px; */
-
             padding-bottom: 20px;
         }
         .content-container .header-container .content-table .logo{
             height: 460px;
             text-align: center;
-        ;
+
 
         }
         .suncoin{
@@ -765,7 +795,7 @@ ul.cities .city-item{
             .containers{
                 width:1140px;
             }
-            .content-container .header-container, .content-container .fgf-container, .content-container .pwu-container, content-container .about-header-container{
+            .content-container .header-container, .content-container .fgf-container, .content-container .pwu-container, .content-container .about-header-container{
                 width: 1140px;
             }
             .npw-container{
@@ -806,10 +836,9 @@ ul.cities .city-item{
 
 /*mobile-side style start*/
 
-@media only screen and (max-width: 640px){
+@media only screen and(min-width: 320px)and (max-width: 640px){
     .containers{
         width:100%;
-        height: 5000px;
         margin: 80px auto 0 auto;
         /*position: relative;*/
 
@@ -831,6 +860,7 @@ ul.cities .city-item{
         height:80px;
     }
     .header-menu .menu-container{
+        width:100%;
         height: 80px;
         background-size: 60px;
         display: -webkit-box;
@@ -866,18 +896,133 @@ ul.cities .city-item{
         background: #ffffff;
         width:100%;
         height: 20px;
-        margin: 2px;
-        padding: 10px;
+        margin: 2px 0px;
+        padding: 10px 0px;
     }
     .npw-container{
         min-height:300px;
         background: url("../images/wpn-bg-mob.jpg") repeat-y;
         background-size: 100%;
     }
+    .content-container .popup-container .popup-box{
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    .popup-box .popup-close{
+        width:30px;
+        height:30px;
+        top: -33px;
+        right: 10px;
+
+    }
+    .popup-box .scroll-box{
+        width:100%;
+        margin: 40px 0 0 0;
+    }
+
+    .popup-box .scroll-items{
+        width:400%;
+
+    }
+    .popup-box .scroll-item{
+        width:100%;
+
+        float:left;
+    }
+    .popup-box .game-pic{
+        /*-webkit-box-flex: 1.0;*/
+        /*-moz-box-flex: 1.0;*/
+        /*-ms-box-flex: 1.0;*/
+        /*box-flex: 1.0;*/
+
+    }
+    .popup-box .game-pic img{
+        width:90%  ;
+        /*width:90px;*/
+        margin: 0px 5% auto 5%;
+    }
+    .popup-box .game-introduction{
+
+    }
+    .popup-box .game-name{
+        position: relative;
+        left: 0px;
+        margin-bottom: 0px;
+        -webkit-transform: scale(.8);
+    }
+    .popup-box .game-introduction{
+        /* display: block; */
+        /* width:90%; */
+        /* max-width: 850px; */
+        /* min-height:100px; */
+        /* background: rgba(3,39,71, .8); */
+        /* color:#ffffff; */
+        /* font-size: 12px; */
+        margin: 0px 5% 20px 5%;
+    }
+    .popup-box .game-introduction p{
+        display: block;
+        padding: 20px 10px;
+        line-height: 25px;
+    }
+    .popup-box .game-launchers{
+        width:90%;
+        margin: 10px 5%;
+    }
+    .popup-box .game-launchers .launcher-item{
+        width:100%;
+        height: 54px;
+        background: rgba(3,39,71, .8);
+        margin: 10px 0;
+    }
+    .popup-box .prev-button{
+        position: absolute;
+        top:auto;
+        bottom:-80px;
+        left: 2%;
+        z-index: 105;
+        display: none;
+        width: 20px;
+        height:30px;
+        background: url("../images/prew-arrow.png") no-repeat;
+        background-size: auto 100%;
+    }
+
+    .popup-box .next-button
+    {
+
+        position: absolute;
+        top:auto;
+        bottom:-80px;
+        right: 2%;
+        z-index: 105;
+        display: block;
+        width: 20px;
+        height:30px;
+        background: url("../images/next-arrow.png") no-repeat;
+        background-size: auto 100%;
+    }
+
+    .prev-button a,.next-button a{
+        display: block;
+        width: 100%;
+        height:100%
+    }
+
+    .popup-box .mobile-hide{
+        display:none;
+    }
+    .popup-box .hi-res-hide{
+        display: block;
+    }
 }
 @media only screen and (max-width: 400px){
     .player-list{
-        margin: 0 10%;
+        margin: 0 20px;
+        min-width: 260px
     }
 }
+
+
 /*mobile-side style end*/
