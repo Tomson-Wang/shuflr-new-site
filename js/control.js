@@ -5,6 +5,7 @@
 jQuery(function($){
 	var scroll_game_index=1;
 	var scroll_game_count=$('.popup-box .scroll-item').length;
+<<<<<<< HEAD
 	var browser_height=document.documentElement.clientHeight;
 	function resetStyle(){
 //		browser_height=document.documentElement.clientHeight;
@@ -23,6 +24,23 @@ jQuery(function($){
 	//window.moveTo(0,100);
 	resetStyle();
 	$(window).resize(resetStyle);
+=======
+	var browser_height= window.screen.availHeight;
+	function resetStyle(){
+		$('.popup-box .scroll-items').css('width',100*scroll_game_count+'%');
+//		$('.popup-box .scroll-item').css('width',100/scroll_game_count+'%');
+
+		$('.popup-container').css('height',browser_height+100+'px');
+		$('.popup-container .popup-box').css('height',browser_height-190+'px');
+		$('.popup-box .scroll-box').css('height',browser_height-190+'px');
+		$('.scroll-items').css('height',browser_height-190+'px');
+		$('.scroll-item').css('height',browser_height-190+'px');
+
+	}
+	window.moveTo(0,100);
+	resetStyle();
+	$('body').on('resize',resetStyle);
+>>>>>>> FETCH_HEAD
 	$('li>a').on('click',function(){
 		var scroll_path=$(this).data('path');
 		if(scroll_path!=''){

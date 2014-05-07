@@ -499,7 +499,11 @@ ul.cities .city-item{
 }
 .popup-box .scroll-item{
     width:100%;
+<<<<<<< HEAD
     position: relative;
+=======
+    position: absolute;
+>>>>>>> FETCH_HEAD
     overflow: hidden;
     float:left;
 }
@@ -507,7 +511,11 @@ ul.cities .city-item{
 {
     position: absolute;
     width: 100%;
+<<<<<<< HEAD
     height:700px;
+=======
+    height:600px;
+>>>>>>> FETCH_HEAD
 }
 .popup-box .game-pic{
     /*-webkit-box-flex: 1.0;*/
@@ -568,7 +576,11 @@ ul.cities .city-item{
 .popup-box .next-button
 {
 
+<<<<<<< HEAD
     position: fixed;
+=======
+    position: absolute;
+>>>>>>> FETCH_HEAD
     top: 50%;
     right: 2%;
     z-index: 105;
@@ -686,9 +698,15 @@ ul.cities .city-item{
     .popup-box .game-introduction{
         margin-top: -10px;
     }
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> FETCH_HEAD
     .popup-box .game-content{}
     /*low-res style start*/
     @media only screen and (max-width: 1440px)
@@ -977,9 +995,15 @@ ul.cities .city-item{
         margin: 10px 0;
     }
     .popup-box .prev-button{
+<<<<<<< HEAD
         position: fixed;
         top:auto;
         bottom:1%;
+=======
+        position: absolute;
+        top:auto;
+        bottom:-80px;
+>>>>>>> FETCH_HEAD
         left: 2%;
         z-index: 105;
         display: none;
@@ -992,9 +1016,15 @@ ul.cities .city-item{
     .popup-box .next-button
     {
 
+<<<<<<< HEAD
         position: fixed;
         top:auto;
         bottom:1%;
+=======
+        position: absolute;
+        top:auto;
+        bottom:-80px;
+>>>>>>> FETCH_HEAD
         right: 2%;
         z-index: 105;
         display: block;
