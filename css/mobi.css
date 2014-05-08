@@ -1,0 +1,192 @@
+.containers{
+    width:100%;
+    margin: 50px auto 0 auto;
+    /*position: relative;*/
+
+}
+/*header menu style start*/
+.containers .header-menu{
+    height:80px;
+}
+.containers .header-menu .menu-container{
+    height: 50px;
+    background-size: 60px;
+    background-position-y: 14px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: horizontal;-moz-box-orient: horizontal;-ms-box-orient: horizontal;box-orient: horizontal;
+    -webkit-box-pack: end;-moz-box-pack: end;-ms-box-pack: end;box-pack: end;
+}
+.containers .header-menu .menu-container .menu-btn{
+
+    background-size: 100%;
+    margin: 5px;
+
+}
+/*header menu style end*/
+
+
+.content-container{
+    background: url(../images/little-background.jpg) repeat-y;
+    background-size: 100% auto;
+}
+
+.header-container, .fgf-container,.pwu-container{
+    width: 100%;
+    /*height: 200px;*/
+}
+.header-container .content-table .f-box{
+    display: block;
+}
+
+.header-container .flow,.about-header-container .flow{
+    display: block;
+    padding: 1px;
+}
+.flow .content-text{
+    margin: 20px auto;
+    font-size: 12px;
+    letter-spacing: 0.5;
+}
+.suncoin{
+    max-width: 240px;
+
+}
+.menu-container ul li{
+    background: #ffffff;
+    width:100%;
+    height: 20px;
+    margin: 2px 0px;
+    padding: 10px 0px;
+}
+.npw-container{
+    min-height:300px;
+    background: url("../images/wpn-bg-mob.jpg") repeat-y;
+    background-size: 100%;
+    display: inline-block;
+}
+.content-container .popup-container .popup-box{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.popup-box .popup-close{
+    width:30px;
+    height:30px;
+    top: -33px;
+    right: 10px;
+
+}
+.popup-box .scroll-box{
+    width:100%;
+    margin: 40px 0 0 0;
+}
+
+.popup-box .scroll-items{
+    width:400%;
+
+}
+.popup-box .scroll-item{
+    width:100%;
+
+    float:left;
+}
+.popup-box .game-pic{
+    /*-webkit-box-flex: 1.0;*/
+    /*-moz-box-flex: 1.0;*/
+    /*-ms-box-flex: 1.0;*/
+    /*box-flex: 1.0;*/
+
+}
+.popup-box .game-pic img{
+    width:90%  ;
+    /*width:90px;*/
+    margin: 0px 5% auto 5%;
+}
+.popup-box .game-introduction{
+
+}
+.popup-box .game-name{
+    position: relative;
+    left: 0px;
+    margin-bottom: 0px;
+    -webkit-transform: scale(.8);
+}
+.popup-box .game-introduction{
+    /* display: block; */
+    /* width:90%; */
+    /* max-width: 850px; */
+    /* min-height:100px; */
+    /* background: rgba(3,39,71, .8); */
+    /* color:#ffffff; */
+    /* font-size: 12px; */
+    margin: 0px 5% 20px 5%;
+}
+.popup-box .game-introduction p{
+    display: block;
+    padding: 20px 10px;
+    line-height: 25px;
+}
+.popup-box .game-launchers{
+    width:90%;
+    margin: 10px 5%;
+}
+.popup-box .game-launchers .launcher-item{
+    width:100%;
+    height: 54px;
+    background: rgba(3,39,71, .8);
+    margin: 10px 0;
+}
+.popup-box .prev-button{
+    position: fixed;
+    top:auto;
+    bottom:1%;
+    left: 2%;
+    z-index: 105;
+    display: none;
+    width: 20px;
+    height:30px;
+    background: url("../images/prew-arrow.png") no-repeat;
+    background-size: auto 100%;
+}
+
+.popup-box .next-button
+{
+
+    position: fixed;
+    top:auto;
+    bottom:1%;
+    right: 2%;
+    z-index: 105;
+    display: block;
+    width: 20px;
+    height:30px;
+    background: url("../images/next-arrow.png") no-repeat;
+    background-size: auto 100%;
+}
+
+.prev-button a,.next-button a{
+    display: block;
+    width: 100%;
+    height:100%
+}
+
+.popup-box .mobile-hide{
+    display:none;
+}
+.popup-box .hi-res-hide{
+    display: block;
+}
+.jtt-container{
+    width:100%;
+    /*min-height:200px;*/
+    display:block;
+    background:url('../images/jtt_m_bj.jpg') no-repeat;
+    background-size: 100%;
+    /*background-position: center center;*/
+    padding-bottom: 100px;
+    padding-top: 120px;
+}

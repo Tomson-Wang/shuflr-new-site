@@ -1,0 +1,137 @@
+@media screen and (min-width: 1281px) {
+    .containers {
+
+        width: 1140px;
+        margin: 100px auto 0 auto;
+    }
+
+    .content-container .header-container, .content-container .fgf-container, .content-container .pwu-container, .content-container .about-header-container {
+        width: 1140px;
+    }
+
+    .npw-container {
+        width: 1118px;
+
+    }
+}
+.content-container .wwu-container{
+    background-size:100%;
+}
+
+
+.content-table{
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+}
+
+.content-table .cell{
+    -webkit-box-flex: 1.0;-moz-box-flex: 1.0;-ms-box-flex: 1.0;box-flex: 1.0;
+    width: 100%;
+    height: 100%;
+}
+.content-table .cell-3{
+    -webkit-box-flex: 3.0;
+    -moz-box-flex: 3.0;
+    -ms-box-flex: 5.0;
+    box-flex: 3.0;
+    width: 100%;
+    height: 100%;
+}
+.content-table .cell-5{
+    -webkit-box-flex: 5.0;
+    -moz-box-flex: 3.0;
+    -ms-box-flex: 5.0;
+    box-flex: 5.0;
+    width: 100%;
+    height: 100%;
+     margin-top: 60px;
+}
+.content-container{
+    width: 100%;
+    background: #ffffff url(../images/test-background1.jpg) no-repeat center;
+    background-size: 100% auto;
+    margin-top: 100px;
+}
+.menu-container{
+    height:80px;
+}
+.menu-container,.vertical-mid{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+    -webkit-box-orient: vertical;-moz-box-orient: vertical;-ms-box-orient: vertical;box-orient: vertical;
+
+    -webkit-box-pack: center;-moz-box-pack: center;-ms-box-pack: center;box-pack: center;
+
+
+
+}
+nav .nav{
+    width: 100%;
+    height:39px;
+    font-size: 17px;
+    text-align: center;
+    margin:15px 0;
+    padding: 6px 0;
+}
+.npw-container{
+    min-height: 570px;
+    margin: 0 auto;
+    background:url("../images/wpn-bg-pc.jpg") repeat-y;
+    background-size: 100% auto;
+}
+
+.content-container .header-container{
+    height: 560px;
+}
+.content-container .about-header-container{
+    padding-bottom: 20px;
+}
+.content-container .header-container .content-table .logo{
+    height: 460px;
+    text-align: center;
+
+
+}
+.suncoin{
+    max-width: 380px;
+    width: 100%;
+
+}
+.content-container .header-container .menu-container,.content-container .about-header-container .menu-container{
+    width: 100%;
+    background: #ffffff;
+
+}
+.content-container .header-container .content-table .left-content{
+    height: 460px;
+}
+.content-container .header-container .content-table .right-content{
+    height: 460px;
+}
+
+.left-content .content-text, .right-content .content-text{
+    width:60%;
+    max-width: 230px;
+    height:100%;
+    color:#ffffff;
+    font-size: 16px;
+    text-align: center;
+    text-shadow:  0px 0px 16px #ffffff ;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+.left-content .content-text{
+    float: right;
+    position: relative;
+}
+.right-content .content-text{
+    float: left;
+    position: relative;
+}
