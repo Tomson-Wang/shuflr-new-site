@@ -1,5 +1,5 @@
 @media screen and (min-width: 1114px) {
-    @media all and (orientation:landscape) {
+   /* @media all and (orientation:landscape) {*/
         .containers {
 
             width: 1140px;
@@ -14,7 +14,7 @@
             width: 1118px;
 
         }
-    }
+   /* }*/
 
 }
 .content-container .wwu-container{
@@ -25,7 +25,7 @@
     width:210px;
 }
 }
-.shuflr-article{width:100%}
+.shuflr-article{width:85%}
 .about-header-container .block-container{
     margin: 5px 0;
 }
@@ -106,8 +106,6 @@ nav .nav{
 .content-container .header-container .content-table .logo{
     height: 460px;
     text-align: center;
-
-
 }
 .suncoin{
     max-width: 380px;
@@ -126,7 +124,7 @@ nav .nav{
     height: 460px;
 }
 
-.left-content .content-text, .right-content .content-text{
+.content-container .left-content .content-text,.content-container .right-content .content-text{
     width:60%;
     max-width: 230px;
     height:100%;
@@ -137,11 +135,11 @@ nav .nav{
     letter-spacing: 1px;
     line-height: 20px;
 }
-.left-content .content-text{
+.content-container .left-content .content-text{
     float: right;
     position: relative;
 }
-.right-content .content-text{
+.content-container .right-content .content-text{
     float: left;
     position: relative;
 }
