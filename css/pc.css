@@ -1,18 +1,21 @@
-@media screen and (min-width: 1281px) {
-    .containers {
+@media screen and (min-width: 1114px) {
+    @media all and (orientation:landscape) {
+        .containers {
 
-        width: 1140px;
-        margin: 100px auto 0 auto;
+            width: 1140px;
+            margin: 100px auto 0 auto;
+        }
+
+        .content-container .header-container, .content-container .fgf-container, .content-container .pwu-container, .content-container .about-header-container {
+            width: 1140px;
+        }
+
+        .npw-container {
+            width: 1118px;
+
+        }
     }
 
-    .content-container .header-container, .content-container .fgf-container, .content-container .pwu-container, .content-container .about-header-container {
-        width: 1140px;
-    }
-
-    .npw-container {
-        width: 1118px;
-
-    }
 }
 .content-container .wwu-container{
     background-size:100%;
@@ -48,7 +51,7 @@
     box-flex: 5.0;
     width: 100%;
     height: 100%;
-     margin-top: 60px;
+    margin-top: 60px;
 }
 .content-container{
     width: 100%;
