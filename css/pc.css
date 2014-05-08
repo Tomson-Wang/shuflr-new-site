@@ -20,8 +20,15 @@
 .content-container .wwu-container{
     background-size:100%;
 }
-
-
+@media screen and (max-width: 960px){
+.wwaa-block,.oo-block{
+    width:210px;
+}
+}
+.shuflr-article{width:100%}
+.about-header-container .block-container{
+    margin: 5px 0;
+}
 .content-table{
     margin: 0 auto;
     display: -webkit-box;

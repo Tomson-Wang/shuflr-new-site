@@ -385,9 +385,7 @@ body{
 
 /*about page */
 .wwaa-block,.oo-block{
-    max-width:310px;
-    min-width: 210px;
-    min-height: 400px;
+    width:310px;
     background: url("../images/about-block-bg.png") no-repeat;
     background-size: 100% 100%;
     border: 2px solid rgba(0,0,0,0);
